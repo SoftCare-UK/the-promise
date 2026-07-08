@@ -22,3 +22,10 @@ node_modules/
 # Stale .git directories left from sandbox cleanup — safe to delete via Finder
 .git.broken/
 .git_locked2/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
