@@ -26,3 +26,23 @@ python3 -m http.server 8000
 
 Designed for Netlify. Either drag-and-drop the folder onto Netlify Drop, or connect this repo to Netlify with default settings (no build command, publish directory = repo root).
 
+
+## Making changes (humans + agents)
+
+- **Each page is standalone HTML** — no shared templates; a nav/footer change
+  must be applied to every page by hand.
+- The staff page's pledge PDF uses **jsPDF from a CDN** — the only external
+  script. Test PDF generation after touching that page.
+- **Factual grounding matters.** The Promise is a real national commitment
+  (Scotland's Independent Care Review). Statements about it must be accurate
+  and sourced; keep the tone respectful of care-experienced people — this is
+  a sensitive subject, not marketing copy.
+- Audience fit: `promise-quest.html` (7–11) stays playful; the teens page is
+  direct and rights-focused; the staff page is reflective, not preachy.
+- Accessibility: semantic structure, alt text, contrast — assume school
+  Chromebooks and screen readers.
+
+No analytics, no cookies, no personal data collected (the pledge PDF is
+generated client-side and never uploaded) — keep it that way.
+
+Maintained by the SoftCare team (SoftCare-UK) as a public-good resource.
